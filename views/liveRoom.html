@@ -1,0 +1,20 @@
+   <!DOCTYPE HTML>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <link href="https://unpkg.com/video.js@6.2.5/dist/video-js.min.css" rel="stylesheet">
+                <script src="https://unpkg.com/video.js@6.2.5/dist/video.min.js"></script>
+                <script src="https://unpkg.com/videojs-flash@2.0.0/dist/videojs-flash.min.js"></script>
+                <script>
+                  videojs.options.flash.swf = 'https://unpkg.com/videojs-swf@5.4.0/dist/video-js.swf';
+                </script>
+</head>
+
+<body>
+        <video id="my-video" class="video-js vjs-default-skin vjs-big-play-centered" controls
+        width="640" height="480" poster="http://vjs.zencdn.net/v/oceans.png"
+                data-setup='{"techOrder": ["flash", "html5"]}'>
+                <source src=<%=liveRoom%> type=<%=type%>>
+        </video>
+</body>
+</html>
